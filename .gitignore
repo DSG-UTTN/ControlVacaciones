@@ -6,8 +6,12 @@ yarn-debug.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
-.DS_Store
+.pnp
+.pnp.js
+
+# Build Output
 dist
 dist-ssr
 coverage
@@ -17,24 +21,42 @@ coverage
 .vscode/*
 !.vscode/extensions.json
 .idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
+# TypeScript
 *.tsbuildinfo
 
+# ESLint
 .eslintcache
 
-# Cypress
+# Testing
 /cypress/videos/
 /cypress/screenshots/
-
-# Vitest
 __screenshots__/
 
 # Environment Variables
 .env
 .env.*
 !.env.example
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
